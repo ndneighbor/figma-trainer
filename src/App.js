@@ -1,59 +1,8 @@
-import styled from "@emotion/styled";
 import { useEffect, useState } from "react";
 import tinykeys from "tinykeys";
+import "./App.css";
 
-const AppBackground = styled.div({
-  backgroundColor: "white",
-  color: "black",
-  fontWeight: "bold",
-  flexDirection: "column",
-  justifyContent: "space-between",
-  height: "100vh",
-  display: "flex",
-});
-
-const Title = styled.div({
-  margin: 64,
-});
-
-const ZenMode = styled.div({
-  paddingTop: 8,
-  paddingBottom: 8,
-  paddingLeft: 64,
-  width: "100%",
-  backgroundColor: "#D5BFF7",
-  border: "solid",
-  borderWidth: 4,
-  borderColor: "black",
-});
-
-const CompetitiveMode = styled.div({
-  paddingTop: 8,
-  paddingBottom: 8,
-  paddingLeft: 64,
-  width: "100%",
-  backgroundColor: "#F4D150",
-  border: "solid",
-  borderWidth: 4,
-  borderTopWidth: 0,
-  borderColor: "black",
-});
-
-const Footer = styled.div({
-  fontWeight: "normal",
-  paddingLeft: 64,
-  marginTop: 8,
-  marginBottom: 8,
-});
-
-const ZenModeToggle = styled.div({
-  margin: 300,
-  visibility: "false",
-});
-
-//
-// 1st, create a random expectation of keybindings like a "set"
-//
+// 1st - Get layout of the application in order.
 
 function App() {
   const [isActive, setActive] = useState(false);
@@ -81,14 +30,30 @@ function App() {
   });
 
   return (
-    <div>
-      <AppBackground>
-        <Title>
-          <h1>Figma Trainer</h1>
+    <div className="App">
+      <div className="Menu">
+        <div className="Title-container">
+          <h1>FigmaTrainer</h1>
           <h3>An unofficial tool for practicing Figma shortcuts.</h3>
-        </Title>
+        </div>
+        <div className="Game-container">
+          <div className="Zen-mode">
+            <h4>Zen Mode</h4>
+            <p>Practice figma shortcuts in an untimed, infinite setting.</p>
+          </div>
+          <div className="Competitive-mode">
+            <h4>Competitive Mode</h4>
+            <p>
+              Race against the clock in a timed test to see how well you really
+              know your shortcuts.
+            </p>
+          </div>
+          <div className="Footer">
+            <p>Designed and developed by @ngeloxyz</p>
+          </div>
+        </div>
         {/* Should be the same component, refactor later */}
-        <div>
+        {/* <div>
           <ZenMode onClick={handleToggle}>
             <h3>Zen Mode</h3>
             <p>Practice figma shortcuts in an untimed, infinite setting.</p>
@@ -102,8 +67,8 @@ function App() {
             </p>
           </CompetitiveMode>
         </div>
-        <Footer>Designed and developed by @ngeloxyz</Footer>
-      </AppBackground>
+        <Footer>Designed and developed by @ngeloxyz</Footer> */}
+      </div>
     </div>
   );
 }
