@@ -115,6 +115,8 @@ p {
 .Instruction-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 128px;
 }
 
 .Instruction {
@@ -122,4 +124,5 @@ p {
   max-width: 450px;
   display: flex;
   flex-direction: row;
+  margin-right: 24px;
 }

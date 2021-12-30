@@ -62,19 +62,17 @@ function App() {
                       </h4>
                     </div>
                     <div className="Instruction">
-                      <p className="Number-container">1</p>
+                      <p className="Number-container">2</p>
                       <h4>
-                        A tool name or action will be given along with the
-                        context of the shortcut. All actions follow the menu bar
-                        commands.
+                        Press the keys prompted that correspond with the tool or
+                        contextual action.
                       </h4>
                     </div>
                     <div className="Instruction">
-                      <p className="Number-container">1</p>
+                      <p className="Number-container">3</p>
                       <h4>
-                        A tool name or action will be given along with the
-                        context of the shortcut. All actions follow the menu bar
-                        commands.
+                        Bask in glory as you recieve a dosage of the good brain
+                        chemicals. When you are ready, try competitve mode.
                       </h4>
                     </div>
                   </div>
