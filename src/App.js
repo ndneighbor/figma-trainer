@@ -50,7 +50,35 @@ function App() {
                     <RightArrow className="Rotate-arrow" />
                   </div>
                 </div>
-                <div>AAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+                <div>
+                  <h2>Instructions</h2>
+                  <div className="Instruction-container">
+                    <div className="Instruction">
+                      <p className="Number-container">1</p>
+                      <h4>
+                        A tool name or action will be given along with the
+                        context of the shortcut. All actions follow the menu bar
+                        commands.
+                      </h4>
+                    </div>
+                    <div className="Instruction">
+                      <p className="Number-container">1</p>
+                      <h4>
+                        A tool name or action will be given along with the
+                        context of the shortcut. All actions follow the menu bar
+                        commands.
+                      </h4>
+                    </div>
+                    <div className="Instruction">
+                      <p className="Number-container">1</p>
+                      <h4>
+                        A tool name or action will be given along with the
+                        context of the shortcut. All actions follow the menu bar
+                        commands.
+                      </h4>
+                    </div>
+                  </div>
+                </div>
               </>
             ) : (
               <div className="Zen-mode">

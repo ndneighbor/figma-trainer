@@ -10,6 +10,11 @@ h1 {
   margin-bottom: 16px;
 }
 
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
 h3 {
   font-size: 36px;
   font-weight: 600;
@@ -17,6 +22,12 @@ h3 {
 
 h4 {
   font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+h5 {
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 8px;
 }
@@ -84,6 +95,31 @@ p {
   font-weight: 500;
 }
 
+.Number-container {
+  background-color: #e8ab94;
+  border-style: solid;
+  padding: 16px;
+  height: 22px;
+  width: 22px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: 700;
+  margin-right: 16px;
+}
+
 .Rotate-arrow {
   transform: rotate(90deg);
+}
+
+.Instruction-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.Instruction {
+  margin-top: 32px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: row;
 }
