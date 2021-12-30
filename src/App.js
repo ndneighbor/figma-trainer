@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import tinykeys from "tinykeys";
+import RightArrow from "./RightArrow.js";
 import "./App.css";
 
 // 1st - Get layout of the application in order.
 
 function App() {
-  const [isActive, setActive] = useState(false);
+  const [isZen, setZen] = useState(false);
 
   const handleToggle = () => {
-    setActive(!isActive);
+    setZen(!isZen);
   };
 
   useEffect(() => {
@@ -37,16 +38,45 @@ function App() {
           <h3>An unofficial tool for practicing Figma shortcuts.</h3>
         </div>
         <div className="Game-container">
-          <div className="Zen-mode">
-            <h4>Zen Mode</h4>
-            <p>Practice figma shortcuts in an untimed, infinite setting.</p>
+          <div className="Zen-container" onClick={handleToggle}>
+            {/* Might wanna wrap this around a state variable */}
+            {isZen ? (
+              <>
+                <div className="Zen-mode">
+                  <div>
+                    <h4>Zen Mode</h4>
+                  </div>
+                  <div>
+                    <RightArrow className="Rotate-arrow" />
+                  </div>
+                </div>
+                <div>AAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+              </>
+            ) : (
+              <div className="Zen-mode">
+                <div>
+                  <h4>Zen Mode</h4>
+                  <p>
+                    Practice figma shortcuts in an untimed, infinite setting.
+                  </p>
+                </div>
+                <div>
+                  <RightArrow />
+                </div>
+              </div>
+            )}
           </div>
           <div className="Competitive-mode">
-            <h4>Competitive Mode</h4>
-            <p>
-              Race against the clock in a timed test to see how well you really
-              know your shortcuts.
-            </p>
+            <div>
+              <h4>Competitive Mode</h4>
+              <p>
+                Race against the clock in a timed test to see how well you
+                really know your shortcuts.
+              </p>
+            </div>
+            <div>
+              <RightArrow />
+            </div>
           </div>
           <div className="Footer">
             <p>Designed and developed by @ngeloxyz</p>
