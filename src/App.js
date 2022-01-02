@@ -14,15 +14,9 @@ function App() {
 
   useEffect(() => {
     let unsubscribe = tinykeys(window, {
-      "Shift+D": () => {
-        console.log("The 'Shift' and 'd' keys were pressed at the same time");
-      },
-      "y e e t": () => {
-        alert("The keys 'y', 'e', 'e', and 't' were pressed in order");
-      },
-      "$mod+KeyD": (event) => {
+      Enter: (event) => {
         event.preventDefault();
-        alert("Either 'Control+d' or 'Meta+d' were pressed");
+        alert("Enter pressed");
       },
     });
     return () => {
@@ -74,6 +68,14 @@ function App() {
                         Bask in glory as you recieve a dosage of the good brain
                         chemicals. When you are ready, try competitve mode.
                       </h4>
+                    </div>
+                  </div>
+                  <div className="Button-inactive">
+                    <div>
+                      <h4>LETS DO IT!!!!!!</h4>
+                    </div>
+                    <div>
+                      <p className="Subtext">(press enter)</p>
                     </div>
                   </div>
                 </div>
